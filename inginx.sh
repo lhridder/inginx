@@ -1,9 +1,4 @@
-echo ".___               .__               ";
-echo "|   | ____    ____ |__| ____ ___  ___";
-echo "|   |/    \  / ___\|  |/    \\  \/  /";
-echo "|   |   |  \/ /_/  >  |   |  \>    < ";
-echo "|___|___|  /\___  /|__|___|  /__/\_ \";
-echo "         \//_____/         \/      \/";
+echo "Nginx prometheus exporter installer"
 
 cat > /etc/nginx/sites-available/exporter <<- 'EOF'
 server {
