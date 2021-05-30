@@ -20,6 +20,7 @@ tar -xvf nginx-prometheus-exporter_0.9.0_linux_amd64.tar.gz
 cat > /etc/systemd/system/nginxexporter.service <<- 'EOF'
 [Unit]
 Description=Nginx exporter
+After=nginx.service
 
 [Service]
 User=root
