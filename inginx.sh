@@ -2,7 +2,7 @@ echo "Nginx prometheus exporter installer"
 
 cat > /etc/nginx/sites-available/exporter <<- 'EOF'
 server {
-        listen 127.0.0.1:80;
+        listen localhost:80;
         location /nginx_status {
                 stub_status;
         }
